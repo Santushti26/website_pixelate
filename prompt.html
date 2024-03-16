@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Prompts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/regstyle.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+
+<div class="container-fluid mt-5">
+<div class="row justify-content-center">
+<div class="col-md-10">
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <center>
+                <h1>Generate Prompts</h1>
+            </center>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-body" style="padding: 35px; padding-bottom: 20px;">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-12" style="margin: 0px;">
+                        <p class="prompt" id="prompt">... No Prompt Generated Yet ...</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0); box-shadow: none;">
+        <div class="card-body">
+            <div class="text-center">
+                <button type="button" class="btn btn-change mx-2" onclick="changePrompt()" id="changePromptBtn">
+                    CHANGE
+                    <span class="iconify" data-icon="bi:arrow-repeat"></span>
+                </button>
+                <button type="button" class="btn btn-accept mx-2" disabled>
+                    <span class="count" id="count">0</span> / 3
+                </button>
+                <button type="button" class="btn btn-accept mx-2" onclick="acceptPrompt()" id="acceptPromptBtn">
+                    ACCEPT
+                    <span class="iconify" data-icon="bi:check"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+<script>
+    var prompts = ["Prompt 1 - Choose from amongst Branding, Marketing, and UX Challenges. Also includes a STEM Education mode, which provides challenges from the non-digital world. Choose from amongst Branding, Marketing, and UX Challenges. Also includes a STEM Education mode, which provides challenges from the non-digital world.", "Prompt 2 - No-nonsense design briefs. Plus if you have briefs of your own you can submit them on the website and help out other designers in the world. No-nonsense design briefs. Plus if you have briefs of your own you can submit them on the website and help out other designers in the world.", "Prompt 3 - Choose from Logo, Brand Identity, Illustration, Packaging, Billboard, and Website design prompts. Each prompt comes with a deadline to keep you on your toes. Choose from Logo, Brand Identity, Illustration, Packaging, Billboard, and Website design prompts. Each prompt comes with a deadline to keep you on your toes."];
+    var currentIndex = 0;
+    var count = 0;
+    function changePrompt() {
+        count = count + 1;
+        var countElement = document.getElementById('count');
+        var promptElement = document.getElementById('prompt');
+        var changePromptBtn = document.getElementById('changePromptBtn');
+        var acceptPromptBtn = document.getElementById('acceptPromptBtn');
+        changePromptBtn.disabled = true;
+        acceptPromptBtn.disabled = true;
+        if (count === 3) {
+            changePromptBtn.disabled = true;
+            acceptPromptBtn.disabled = true;
+        }
+        var newPrompt = prompts[currentIndex];
+        currentIndex = (currentIndex + 1);
+        promptElement.innerText = "";
+        countElement.innerText = count;
+        var typed = new Typed('.prompt', {
+            strings: [newPrompt],
+            typeSpeed: 0,
+            backSpeed: 0,
+            showCursor: false,
+            onComplete: function () {   
+                if (count != 3) {
+                    changePromptBtn.disabled = false;
+                    acceptPromptBtn.disabled = false;
+                }
+            }
+        });
+    }
+    function acceptPrompt() {
+        var changePromptBtn = document.getElementById('changePromptBtn');
+        var acceptPromptBtn = document.getElementById('acceptPromptBtn');
+        changePromptBtn.disabled = true;
+        acceptPromptBtn.disabled = true;
+    }
+</script>
+
+</body>
+
+</html>

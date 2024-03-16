@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="reg_script.js"></script>
+    <link rel="stylesheet" href="reg_styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3aecdbe258.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <p>Register Your Team!
+        <p>
+    </div>
+    <div class="container">
+        <form id="regForm">
+            <p class="label">Team Name<span style="color:red">*</span></p>
+            <p><input type="text" placeholder="Team Name" class="inputField" id="teamName"></p>
+            <p class="reqd" id="reqdmsg1"></p>
+
+            <br>
+
+            <div class="details">
+                <p class="label">Team Leader Details<span style="color:red">*</span></p>
+                <p><input type="text" placeholder="Name" class="inputField" id="name1"></p>
+                <div class="reqd" id="reqdmsg2"></div>
+                <p><input type="text" placeholder="Registration No" class="inputField" id="reg1"></p>
+                <div class="reqd" id="message1"></div>
+                <p class="reqd" id="reqdmsg3"></p>
+                <p><input type="text" placeholder="Email Id" class="inputField" id="eID1"></p>
+                <p class="reqd" id="message5"></p>
+                <p class="reqd" id="reqdmsg4"></p>
+            </div>
+
+            <br>
+
+            <div class="details">
+                <p class="label">Member 1 Details<span style="color:red">*</span></p>
+                <p><input type="text" placeholder="Name" class="inputField" id="name2"></p>
+                <p class="reqd" id="reqdmsg5"></p>
+                <p><input type="text" placeholder="Registration No" class="inputField" id="reg2"></p>
+                <p class="reqd" id="message2"></p>
+                <p class="reqd" id="reqdmsg6"></p>
+                <p><input type="text" placeholder="Email Id" class="inputField" id="eID2"></p>
+                <p class="reqd" id="message6"></p>
+                <p class="reqd" id="reqdmsg7"></p>
+            </div>
+
+            <br>
+
+            <div class="details">
+                <p class="label">Member 2 Details</p>
+                <p><input type="text" placeholder="Name" class="inputField" id="name3"></p>
+                <p><input type="text" placeholder="Registration No" class="inputField" id="reg3"></p>
+                <p class="reqd" id="message3"></p>
+                <p><input type="text" placeholder="Email Id" class="inputField" id="eID3"></p>
+                <p class="reqd" id="message7"></p>
+            </div>
+
+            <br>
+
+            <div class="details">
+                <p class="label">Member 3 Details</p>
+                <p><input type="text" placeholder="Name" class="inputField" id="name4"></p>
+                <p><input type="text" placeholder="Registration No" class="inputField" id="reg4"></p>
+                <p class="reqd" id="message4"></p>
+                <p><input type="text" placeholder="Email Id" class="inputField" id="eID4"></p>
+                <p class="reqd" id="message8"></p>
+            </div>
+
+
+            <p><span style="color:red; font-style: italic; font-size: 14px;">* are required fields<span></p>
+
+            <div class="options">
+                <button type="submit" id="submitBtn">Submit</button>
+                <button type="submit" id="edit">Edit</button>
+            </div>
+        </form>
+
+        <div class="links">
+            <button type="submit" class="dc"><a href><i class="fa-brands fa-discord" style="color: #ffffff;"></i>&nbsp&nbspJoin our Discord Server</a></button>
+            <button type="submit" class="gen"><a href>Generate Problem Statement</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

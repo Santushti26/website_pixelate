@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+
+  <link href="https://db.onlinewebfonts.com/c/926fcaaa8b66e0df67e176f329259711?family=PP+Editorial+New"
+    rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/155c3fcab90ff316f2afaf56be1b86b4?family=PP+Editorial+Old"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3aecdbe258.js" crossorigin="anonymous"></script>
+ <!-- Test -->
+  <style>
+    @font-face {
+      font-family: "Thunder";
+      src: url('/fonts/thunder/THUNDER/Fonts/Thunder-MediumLC.woff') format('woff');
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+
+    }
+
+    .header {
+      text-align: center;
+      font-weight: 700;
+      font-size: 50px;
+      font-family: "PP Editorial Old";
+      letter-spacing: 3px;
+    }
+    
+    .logo{
+      margin:40px;
+    }
+
+    .main{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .Container {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 6px rgba(168, 168, 168, 0.5);
+      text-align: center;
+      min-width: 300px;
+      width: 70%;
+      height: 550px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      padding: 10px 40px;
+      border: none;
+      border-radius: 25px;
+      margin: 10px;
+      cursor: pointer;
+      color: white;
+      height: 60px;
+      width: 300px;
+      font-family: "Thunder";
+      font-size: 28px;
+      letter-spacing: 1px;
+      align-items: center ;
+      text-align: center;
+      background-image: linear-gradient(to right, rgb(180, 0, 4), rgb(78, 0, 2));
+    }
+
+    button:hover{
+      transition: 0.3s;
+      background-image: linear-gradient(to right, rgb(78, 0, 4), rgb(78, 0, 2));
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .header{
+        font-size: 45px;
+      }
+    }
+  </style>
+  <!-- <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  h1 {
+    font-size: 108px;
+    margin-bottom: 30px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .button {
+    padding: 10px 40px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px; 
+    background-color: #4caf50; 
+    color: white;
+  }
+  .button.edit {
+    background-color: #2196f3; 
+  }
+</style> -->
+</head>
+
+<body>
+  <div class="logo"><a href="index.html"><img src="images/logo.png" height="50px"></a></div>
+  <div class="main">
+    <div class="Container">
+      <form action="">
+        <p class="header"><span style="font-style: italic;">Register</span> Your Team!</p>
+
+        <div class="login-container">
+          <p style="font-weight: 500; font-size:36px; font-family: PP Editorial Old; letter-spacing: 1px;">Welcome</p>
+          <div class="button-container">
+            <button class="button register" id="register">REGISTER TEAM &nbsp;<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+            <button class="button edit" id="edit">EDIT TEAM &nbsp;<i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+          </div>
+          <br>
+          <a href="#" style="color:rgb(233, 233, 233); margin-bottom:40px; font-family: Thunder; letter-spacing: 1px; font-size: 20px;">Don't have a team yet? Join our Discord<span style="text-decoration: none;"> <i class="fa-brands fa-discord"
+                style="color: #ffffff;"></i></span></a></button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script type="text/javascript">
+      document.getElementById('register').addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = "register.htm";
+      });
+
+      document.getElementById('edit').addEventListener('click', (e) => {
+        e.preventDefault();
+        window.location.href = "edit.htm";
+      });
+
+    </script>
+</body>
+
+</html>

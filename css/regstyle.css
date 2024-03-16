@@ -1,0 +1,71 @@
+@import url('https://db.onlinewebfonts.com/c/155c3fcab90ff316f2afaf56be1b86b4?family=PP+Editorial+Old');
+
+@font-face {
+    font-family: "Thunder";
+    src: url('/fonts/thunder/THUNDER/Fonts/Thunder-MediumLC.woff') format('woff');
+}
+
+
+body {
+    background: #000;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin-top: 20px;
+    font-family: 'PP Editorial Old';
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.card-header {
+    font-family: "Thunder";
+    margin-top: 10px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    color: white;
+    border: none;
+    box-shadow: 0 2px 6px 0 rgba(168, 168, 168, 0.5);
+}
+
+.btn {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 25px;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    height: 60px;
+    width: 320px;
+    font-family: "Thunder";
+    font-size: 28px;
+    letter-spacing: 1px;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(180, 0, 4), rgb(78, 0, 2));
+}
+
+.btn:hover {
+    transition: 0.3s;
+    color: white;
+    font-size: 32px;
+    background-image: linear-gradient(to right, rgb(78, 0, 4), rgb(78, 0, 2));
+}
+
+.prompt {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    h1{
+        font-size: 35px;
+    }
+}

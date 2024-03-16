@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/regstyle.css">
+    <script src="https://kit.fontawesome.com/3aecdbe258.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</head>
+
+<body>
+
+    <div style="margin:40px;">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" height="50px"></a></div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <center>
+                            <h1>Register Your Team</h1>
+                        </center>
+                    </div>
+                </div>
+                <form id="regForm">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h2 class="text-center">General Details <span style="color:red;">*</span></h3>
+                        </div>
+                        <div class="card-body" style="padding-bottom: 0px;">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="teamName" name="teamName"
+                                            placeholder="Team Name *" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="password" name="password"
+                                            placeholder="Password *" required>
+                                    </div>
+                                    <div class="form-group col-md-12" style="color:red; margin: 0px;">
+                                        <p class="reqd" id="reqdmsg1"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h2 class="text-center">Team Leader <span style="color:red;">*</span></h3>
+                        </div>
+                        <div class="card-body" style="padding-bottom: 0px;">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="teamLeader" name="teamLeader"
+                                            placeholder="Student Name *" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="leaderRegNum" name="leaderRegNum"
+                                            placeholder="Registration Number *" required>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="teamLeaderEmail"
+                                            name="teamLeaderEmail" placeholder="VIT E-Mail Address *" required>
+                                    </div>
+                                    <div class="form-group col-md-12" style="color:red; margin: 0px;">
+                                        <p class="reqd" id="reqdmsg2"></p>
+                                        <p class="reqd" id="message1"></p>
+                                        <p class="reqd" id="message5"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h2 class="text-center">Team Member 1 <span style="color:red;">*</span></h3>
+                        </div>
+                        <div class="card-body" style="padding-bottom: 0px;">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="teamMember1" name="teamMember1"
+                                            placeholder="Student Name *" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="MemberRegNum1" name="MemberRegNum1"
+                                            placeholder="Registration Number *" required>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="MemberEmail1" name="MemberEmail1"
+                                            placeholder="VIT E-Mail Address *" required>
+                                    </div>
+                                    <div class="form-group col-md-12" style="color:red; margin: 0px;">
+                                        <p class="reqd" id="reqdmsg3"></p>
+                                        <p class="reqd" id="message1"></p>
+                                        <p class="reqd" id="message6"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h2 class="text-center">Team Member 2</h3>
+                        </div>
+                        <div class="card-body" style="padding-bottom: 0px;">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="teamMember2" name="teamMember2"
+                                            placeholder="Student Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="MemberRegNum2" name="MemberRegNum2"
+                                            placeholder="Registration Number">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="MemberEmail2" name="MemberEmail2"
+                                            placeholder="VIT E-Mail Address">
+                                    </div>
+                                    <div class="form-group col-md-12" style="color:red; margin: 0px;">
+                                        <p class="reqd" id="reqdmsg4"></p>
+                                        <p class="reqd" id="message1"></p>
+                                        <p class="reqd" id="message7"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h2 class="text-center">Team Member 3</h3>
+                        </div>
+                        <div class="card-body" style="padding-bottom: 0px;">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="teamMember3" name="teamMember3"
+                                            placeholder="Student Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" id="MemberRegNum3" name="MemberRegNum3"
+                                            placeholder="Registration Number">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="email" class="form-control" id="MemberEmail3" name="MemberEmail3"
+                                            placeholder="VIT E-Mail Address">
+                                    </div>
+                                    <div class="form-group col-md-12" style="color:red; margin: 0px;">
+                                        <p class="reqd" id="reqdmsg4"></p>
+                                        <p class="reqd" id="message1"></p>
+                                        <p class="reqd" id="message8"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4" style="background-color: rgba(255, 255, 255, 0); box-shadow: none;">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <button type="button" class="btn btn-submit mx-2" id="submit">
+                                    SUBMIT FORM &nbsp; <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                                </button></a>
+                                <a href=""><button type="button" class="btn btn-discord mx-2">
+                                        JOIN DISCORD <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="reg_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="module">
+        var firebaseConfig = {
+            apiKey: "AIzaSyA2hHwQvtG3Av0QigZGcaXl7dLiki-VGCE",
+            authDomain: "yantra-pixelate.firebaseapp.com",
+            databaseURL: "https://yantra-pixelate-default-rtdb.firebaseio.com",
+            projectId: "yantra-pixelate",
+            storageBucket: "yantra-pixelate.appspot.com",
+            messagingSenderId: "149704458460",
+            appId: "1:149704458460:web:c7a53a1e4027e789b33419",
+            measurementId: "G-HR76P4K7YX"
+        };
+        var app = firebase.initializeApp(firebaseConfig);
+        var database = firebase.database(app);
+        function registerTeam() {
+            var teamName = document.getElementById("teamName").value;
+            var password = document.getElementById("password").value;
+            var teamLeader = document.getElementById("teamLeader").value;
+            var leaderRegNum = document.getElementById("leaderRegNum").value;
+            var teamLeaderEmail = document.getElementById("teamLeaderEmail").value;
+            var teamMember1 = document.getElementById("teamMember1").value;
+            var member1RegNum = document.getElementById("MemberRegNum1").value;
+            var member1Email = document.getElementById("MemberEmail1").value;
+            var teamMember2 = document.getElementById("teamMember2").value;
+            var member2RegNum = document.getElementById("MemberRegNum2").value;
+            var member2Email = document.getElementById("MemberEmail2").value;
+            var teamMember3 = document.getElementById("teamMember3").value;
+            var member3RegNum = document.getElementById("MemberRegNum3").value;
+            var member3Email = document.getElementById("MemberEmail3").value;
+            database.ref('teams/' + leaderRegNum).set({
+                teamName: teamName,
+                password: password,
+                teamLeader: teamLeader,
+                leaderRegNum: leaderRegNum,
+                teamLeaderEmail: teamLeaderEmail,
+                teamMember1: teamMember1,
+                member1RegNum: member1RegNum,
+                member1Email: member1Email,
+                teamMember2: teamMember2,
+                member2RegNum: member2RegNum,
+                member2Email: member2Email,
+                teamMember3: teamMember3,
+                member3RegNum: member3RegNum,
+                member3Email: member3Email,
+            }).then(function () {
+                alert("Team registered successfully!");
+                // window.location.href = 'index.html';
+                event.preventDefault;
+            }).catch(function (error) {
+                console.error("Error registering team: ", error);
+                alert("Error registering team. Please try again.");
+            });
+        }
+        document.getElementById('submit').addEventListener('click', (e) => {
+            e.preventDefault();
+            registerTeam();
+        });
+    </script>
+
+</body>
+
+</html>
